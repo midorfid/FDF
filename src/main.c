@@ -6,7 +6,7 @@
 /*   By: ashevchu <ashevchu@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/27 19:47:23 by ashevchu      #+#    #+#                 */
-/*   Updated: 2023/04/25 17:59:40 by ashevchu      ########   odam.nl         */
+/*   Updated: 2023/05/10 16:40:28 by ashevchu      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,13 @@ strerror, exit*/
 // 		image->instances[0].x += 5;
 // }
 
+static void	ft_hook(void *param)
+{
+	const mlx_t	*mlx = param;
+
+	ft_printf("WIDTH: %d | HEIGHT: %d\n", mlx->width, mlx->height);
+}
+
 int	main(int argc, char **argv)
 {
 	t_ss	*data;
@@ -62,20 +69,23 @@ int	main(int argc, char **argv)
 	// ft_printf("yyyy:%d\n", strlen(get_next_line(fd)));
 	// close(fd);
 	// return (0);
-	mlx_t* mlx;
-
+	mlx_t* mlx = mlx_init(WIDTH, HEIGHT, "MLX42", true);
 	// Gotta error check this stuff
-	if (!(mlx = mlx_init(WIDTH, HEIGHT, "MLX42", true)))
+	if (!mlx)
 	{
 		puts(mlx_strerror(mlx_errno));
-		return(EXIT_FAILURE);
+		return(EXIT_FAILURE);	
 	}
-	if (!(image = mlx_new_image(mlx, 1280, 1280)))
+	if (!(image = mlx_new_image(mlx, 512, 512)))
 	{
 		mlx_close_window(mlx);
 		puts(mlx_strerror(mlx_errno));
 		return(EXIT_FAILURE);
 	}
+	// test(data, image);
+	// bresenham(110, 110, 110, 110, data, image);
+
+	// mlx_put_pixel(image, 100, 100, 0xffffff);
 	if (mlx_image_to_window(mlx, image, 0, 0) == -1)
 	{
 		mlx_close_window(mlx);
@@ -88,6 +98,7 @@ int	main(int argc, char **argv)
 	data = malloc(sizeof(t_ss));
 	read_file(argv[1], data);
 	int x,y = 0;
+	
 	while (y != data->height && y + 1 != data->height)
 	{
 		x = 0;
@@ -101,7 +112,7 @@ int	main(int argc, char **argv)
 		}
 		y++;
 	}
-	// edge lines
+	// // edge lines
 	x = 0;
 	while (x != data->width && x + 1 != data->width)
 	{
@@ -116,9 +127,10 @@ int	main(int argc, char **argv)
 	}
 	// edge lines
 	// bresenham(0, 0, 10, 10, data, image);
+	mlx_loop_hook(mlx, ft_hook, mlx);
 	mlx_loop(mlx);
 	mlx_terminate(mlx);
 	// free(data);
 	// system("leaks a.out");
-	return (0);
+	return (EXIT_SUCCESS);
 }

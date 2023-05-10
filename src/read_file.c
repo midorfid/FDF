@@ -6,7 +6,7 @@
 /*   By: ashevchu <ashevchu@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/30 17:49:20 by ashevchu      #+#    #+#                 */
-/*   Updated: 2023/04/03 17:34:46 by ashevchu      ########   odam.nl         */
+/*   Updated: 2023/05/10 17:19:36 by ashevchu      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,16 +27,15 @@ int	get_height(char *file)
 	return (height);
 }
 
-int	get_width(char *file)
+int	*get_width(char *file)
 {
-	int		width;
+	int		*width;
 	int		fd;
 	char	*temp;
 
 	fd = open(file, O_RDONLY, 0);
 	width = 0;
 	temp = get_next_line(fd);
-	// ft_printf("yyyy:%d\n", strlen(temp));
 	width = w_count(temp, ' ');
 	free(temp);
 	free (get_next_line(fd));
