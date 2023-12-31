@@ -26,7 +26,7 @@
 typedef struct S
 {
 	int		height;
-	int		*width;
+	int		width;
 	int		**z_axis;
 	int		color;
 

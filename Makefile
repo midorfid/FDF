@@ -7,15 +7,15 @@ NAME		= fdf
 HEADER		= ./include/fdf.h
 LIBFT		= Libft/libft.a
 MLX42		= MLX42/build/libmlx42.a
-CFLAGS		= -Wall -Wextra -Werror -Iinclude -lglfw -L"/Users/ashevchu/.brew/opt/glfw/lib/"
+CFLAGS		= -Wall -Wextra -Werror -Iinclude -lglfw -pthread -lm -lGL -ldl
 
 all:		$(NAME)
 
 $(NAME):	$(OBJ) $(HEADER) $(LIBFT) $(MLX42)
-			$(CC) $(CFLAGS) $(OBJ) $(LIBFT) $(PRINTF) $(MLX42) -o $(NAME)
+			$(CC) $(OBJ) $(LIBFT) $(PRINTF) $(MLX42) $(CFLAGS) -o $(NAME)
 
 %.o: %.c
-	cc $(FLAGS) -c $< -o $@
+	cc -c $< -o $@
 
 $(LIBFT):
 	make -C Libft

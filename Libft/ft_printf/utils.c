@@ -24,10 +24,8 @@ size_t	ft_strlen_prnt(const char *s)
 
 void	ft_putstr_fd_prnt(char *s, int fd)
 {
-	size_t	x;
 	size_t	str_len;
 
-	x = 0;
 	str_len = ft_strlen_prnt(s);
 	write(fd, s, str_len);
 }

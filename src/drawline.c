@@ -32,7 +32,7 @@ float	module(float a)
 void	isometric(float *x0, float *y0, int z)
 {
 	*x0 = (*x0 - *y0) * cos(0.8);
-	// *y0 = (*x0 + *y0 - z) * sin(0.8);
+	*y0 = (*x0 + *y0 - z) * sin(0.8);
 }
 
 void	bresenham(float x0, float y0, float x1, float y1, t_ss *data, mlx_image_t* image)
@@ -40,13 +40,13 @@ void	bresenham(float x0, float y0, float x1, float y1, t_ss *data, mlx_image_t* 
 	float		x_step;
 	float		y_step;
 	float		max;
-	int			zoom = 40;
+	int			zoom = 10;
 	int			z;
 	int			z1;
 
 	z = data->z_axis[(int)y0][(int)x0];
 	z1 = data->z_axis[(int)y1][(int)x1];
-	// isometric(&x0, &y0, z);
+	isometric(&x0, &y0, z);
 	x0 *= zoom;
 	x1 *= zoom;
 	y0 *= zoom;

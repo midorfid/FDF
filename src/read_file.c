@@ -27,9 +27,9 @@ int	get_height(char *file)
 	return (height);
 }
 
-int	*get_width(char *file)
+int	get_width(char *file)
 {
-	int		*width;
+	int		width;
 	int		fd;
 	char	*temp;
 
