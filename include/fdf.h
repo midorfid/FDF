@@ -22,17 +22,32 @@
 # define X 0
 # define Y 1
 # define Z 2
+# define ISO 0
 
-typedef struct S
+typedef	struct s_points
 {
-	int		height;
-	int		width;
-	int		**z_axis;
+	double	cords[3];
 	int		color;
 
-	void	*mlx_ptr;
-	void	*win_ptr;
-}t_ss;
+}t_points;
+
+
+typedef struct s_map
+{
+	size_t		column;
+	size_t		row;
+	t_points	*point;
+
+}t_map;
+
+typedef struct s_fdf
+{
+	t_map *map;
+	//projection
+	//zoom
+	//mlx_image
+
+}t_fdf;
 
 void	test(t_ss *data, mlx_image_t* image);
 void	bresenham(float x0, float y0, float x1, float y1, t_ss *data, mlx_image_t* image);

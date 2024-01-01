@@ -62,7 +62,7 @@ static void	ft_hook(void *param)
 
 int	main(int argc, char **argv)
 {
-	t_ss	*data;
+	t_fdf	*data;
 	// int		fd;
 
 	// fd = open("../test_maps/42.fdf", O_RDONLY, 0);
@@ -95,37 +95,9 @@ int	main(int argc, char **argv)
 	// mlx_loop_hook(mlx, ft_randomize, mlx);
 	// mlx_loop_hook(mlx, ft_hook, mlx);
 
-	data = malloc(sizeof(t_ss));
+	data = malloc(sizeof(t_fdf));
 	read_file(argv[1], data);
-	int x,y = 0;
-	
-	while (y != data->height && y + 1 != data->height)
-	{
-		x = 0;
-		while (x != data->width && x + 1 != data->width)
-		{
-			if (x < data->width - 1)
-				bresenham(x, y, x + 1, y, data, image);
-			if (y < data->height - 1)
-				bresenham(x, y, x, y + 1, data, image);
-			x++;
-		}
-		y++;
-	}
-	// // edge lines
-	x = 0;
-	while (x != data->width && x + 1 != data->width)
-	{
-		bresenham(x, y, x + 1, y, data, image);
-		x++;
-	}
-	y = 0;
-	while (y != data->height && y + 1 != data->height)
-	{
-		bresenham(x, y, x, y + 1, data, image);
-		y++;
-	}
-	// edge lines
+
 	// bresenham(0, 0, 10, 10, data, image);
 	mlx_loop_hook(mlx, ft_hook, mlx);
 	mlx_loop(mlx);

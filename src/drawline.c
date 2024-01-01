@@ -29,12 +29,6 @@ float	module(float a)
 		return (a);
 }
 
-void	isometric(float *x0, float *y0, int z)
-{
-	*x0 = (*x0 - *y0) * cos(0.8);
-	*y0 = (*x0 + *y0 - z) * sin(0.8);
-}
-
 void	bresenham(float x0, float y0, float x1, float y1, t_ss *data, mlx_image_t* image)
 {
 	float		x_step;
@@ -46,7 +40,7 @@ void	bresenham(float x0, float y0, float x1, float y1, t_ss *data, mlx_image_t* 
 
 	z = data->z_axis[(int)y0][(int)x0];
 	z1 = data->z_axis[(int)y1][(int)x1];
-	isometric(&x0, &y0, z);
+	// isometric(&x0, &y0, z);
 	x0 *= zoom;
 	x1 *= zoom;
 	y0 *= zoom;
@@ -57,13 +51,11 @@ void	bresenham(float x0, float y0, float x1, float y1, t_ss *data, mlx_image_t* 
 	max = maks(module(x_step), module(y_step));
 	x_step /= max;
 	y_step /= max;
-	while (x0 != x1 + 1 && y0 != y1 + 1)
+	while (x0 != x1 + 1
 	{
 		mlx_put_pixel(image, x0, y0, data->color);
 		x0 += x_step;
 		y0 += y_step;
-		if (x0 > data->width * zoom|| y0 > data->height * zoom|| y0 < 0 || x0 < 0)
-			break ;
 	}
 }
 
