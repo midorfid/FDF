@@ -11,102 +11,104 @@
 /* ************************************************************************** */
 
 #include "../include/fdf.h"
+#include "../include/line.h"
 #include "../MLX42/include/MLX42/MLX42.h"
 
-float	maks(float a, float b)
-{
-	if (a > b)
-		return (a);
+t_color	init_color(t_points p1, t_points p2, int delta[2]){
+	const uint8_t		*p1_color = (uint8_t*)&p1.color;
+	const uint8_t		*p2_color = (uint8_t*)&p2.color;
+	t_color					color;
+	int						i;
+
+	ft_bzero(&color, sizeof(t_color));
+	if(p1.color == p2.color){
+		color.orginal == p1.color;
+		return (color);
+	}
+	if(delta[X] < delta[Y])
+		color.axis = Y;
 	else
-		return (b);
+		color.axis = X;
+	color.alt = 1;
+	i = 0;
+	while(i < 4){
+		color.change[i] = (double)((int)p2_color[i] - \
+				(int)p1_color[i]) / delta[color.axis];
+		color.current[i] = p1_color[i];
+		++i;
+	}
+	return(color);
 }
 
-float	module(float a)
-{
-	if (a < 0)
-		return (-a);
-	else
-		return (a);
-}
+void	add_color(t_color *color){
+	int	i;
 
-void	bresenham(float x0, float y0, float x1, float y1, t_ss *data, mlx_image_t* image)
-{
-	float		x_step;
-	float		y_step;
-	float		max;
-	int			zoom = 10;
-	int			z;
-	int			z1;
-
-	z = data->z_axis[(int)y0][(int)x0];
-	z1 = data->z_axis[(int)y1][(int)x1];
-	// isometric(&x0, &y0, z);
-	x0 *= zoom;
-	x1 *= zoom;
-	y0 *= zoom;
-	y1 *= zoom;
-	x_step = x1 - x0;
-	y_step = y1 - y0;
-	data->color = (z || z1) ? 0xffffff : 0xffffff;
-	max = maks(module(x_step), module(y_step));
-	x_step /= max;
-	y_step /= max;
-	while (x0 != x1 + 1
-	{
-		mlx_put_pixel(image, x0, y0, data->color);
-		x0 += x_step;
-		y0 += y_step;
+	if(!color->alt)
+		return ;
+	i = 0;
+	while(i < 4){
+		color->current[i] += color->change[i];
+		++i;
 	}
 }
 
-// void	test(t_ss *data, mlx_image_t* image)
-// {
-// 	float x0 = 1.0;
-// 	float x1 = 3.0;
-// 	float y0 = 1.0;
-// 	float y1 = 3.0;
-// 	bresenham(110, 110, 200, 200, data, image);
-// }
+int		get_color(t_color *color){
+	int 	i;
+	int		result;
+	uint8_t *_result;
 
+	if(!color->alt)
+		return(color->current);
+	_result = (uint8_t *)&result;
+	i = 0;
+	while(i < 4){
+		_result[i] = color->current[i];
+		++i;
+	}
+	return(result);
+}
 
-//mnukhit
-	// int			min_x;
-	// int			max_x;
-	// int			min_y;
-	// int			max_y;
+t_line init_line(t_points p1, t_points p2){
+	t_line line;
 	
-// if (x0 >= x1)
-// 	{
-// 		min_x = x1;
-// 		max_x = x0;
-// 	}
-// 	else 
-// 	{
-// 		min_x =x0;
-// 		max_y = x1;
-// 	}
-// 	if (y0 >= y1)
-// 	{
-// 		min_y = y1;
-// 		max_y = y0;
-// 	}
-// 	else 
-// 	{
-// 		min_y = y0;
-// 		max_y = y1;
-// 	}
-	
-// 	int i = 0;
-// 	int j;
+	line.start[X] = p1.cords[X];
+	line.start[Y] = p1.cords[Y];
+	line.end[X] = p2.cords[X];
+	line.end[Y] = p2.cords[Y];
+	line.delta[X] = abs(line.end[X] - line.start[X]);
+	line.sign[X] = 1;
+	if(line.end[X] < line.start[X])
+		line.sign[X] = -1;
+	line.delta[Y] = abs(line.end[Y] - line.start[Y]);
+	line.sign[Y] = 1;
+	if(line.end[Y] < line.start[Y])
+		line.sign[Y] = -1;
+	line.error[0] = line.delta[X] + (-line.delta[Y]);
+	line.color = init_color(p1, p2, line.delta);
+	return(line);
+}
 
-// 	while (i >= min_x && i <= max_x)
-// 	{
-// 		j = 0;
-// 		while (j >= min_y && j <= max_y)
-// 		{
-// 			if ((i - min_x)/(j - min_y) == x_step/y_step)
-// 				mlx_put_pixel(image, x0, y0, data->color);
-// 			j++;
-// 		}
-// 		i++;
-// 	}
+void draw_line(t_points p1, t_points p2, \
+		void (*plotf)(int, int, int, void *), void *data){
+	t_line line;
+
+	line = init_line(p1, p2);
+	while(1){
+		plotf(line.start[X], line.start[Y], get_color(&line.color), data);
+		if(line.start[X] == line.end[X] && line.start[Y] == line.end[Y])
+			break ;
+		line.error[1] = line.error[0] * 2;
+		if(line.error[1] >= -line.delta[Y]){
+			// if(line.color.axis == X)
+			// 	add_color(line.color)
+			line.error[0] -= line.delta[Y];
+			line.start[X] += line.sign[X];
+		}
+		if(line.error[1] <= line.delta[X]){
+			// if(line.color.axis == Y)
+			// 	add_color(line.color)
+			line.error[0] += line.delta[X];
+			line.start[Y] += line.sign[Y];
+		}
+	}
+}
