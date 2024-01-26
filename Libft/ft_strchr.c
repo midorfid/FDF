@@ -14,20 +14,12 @@
 
 char	*ft_strchr(const char	*str, int s)
 {
-	size_t			i;
-	char			*str1;
-	char			brk_pnt;
-
-	i = 0;
-	brk_pnt = s;
-	str1 = (char *)str;
-	while (str1[i])
-	{
-		if (brk_pnt == str1[i])
-			return (&str1[i]);
-		i++;
+	while(*str){
+		if((unsigned char)*str == (unsigned char)s)
+			return((char *)str);
+		str++;
 	}
-	if (str1[i] == brk_pnt)
-		return (&str1[i]);
+	if(s == '\0')
+		return((char *)str);
 	return (NULL);
 }

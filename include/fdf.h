@@ -42,16 +42,34 @@ typedef struct s_map
 
 typedef struct s_fdf
 {
-	t_map *map;
-	//projection
-	//zoom
-	//mlx_image
-
+	t_map 				*map;
+	mlx_t				*mlx;
+	mlx_image_t			*img[2];
+	mlx_image_t			*text_img[4];
+	int					update;
+	int					img_idx[2];
+	double				scale;
+	double				map_scale;
+	double				x_offset;
+	double				y_offset;
+	double				z_scale;
+	int					projection;
+	int					current_img;
 }t_fdf;
 
-void	test(t_ss *data, mlx_image_t* image);
-void	bresenham(float x0, float y0, float x1, float y1, t_ss *data, mlx_image_t* image);
-void	read_file(char *file, t_ss *parameters);
-int		w_count(char *s, char set);
+void    error_msg_exit(char *error, int error_code);
+void    *alloc_or_perror(void *ptr);
+void    exit_if_true(bool status);
+
+int		ft_atoi_save(const char *str, int *num);
+char	*ft_strndup(char *str, size_t n);
+
+t_map	*parse_map(char *filename);
+t_map	*dup_map(t_map *map);
+void    map_apply_offset(t_map *map, double offset[]);
+
+void    plot_point(mlx_image_t *img, t_map *map);
+
+void	destroy_fdf(t_fdf *fdf);
 
 #endif

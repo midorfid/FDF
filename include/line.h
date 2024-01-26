@@ -25,4 +25,6 @@ typedef struct line
 }t_line;
 
 
+void draw_line(t_points p1, t_points p2, \
+		void (*plotf)(int, int, int, void *), void *data);
 #endif

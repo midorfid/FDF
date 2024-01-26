@@ -99,14 +99,14 @@ void draw_line(t_points p1, t_points p2, \
 			break ;
 		line.error[1] = line.error[0] * 2;
 		if(line.error[1] >= -line.delta[Y]){
-			// if(line.color.axis == X)
-			// 	add_color(line.color)
+			if(line.color.axis == X)
+				add_color(&line.color);
 			line.error[0] -= line.delta[Y];
 			line.start[X] += line.sign[X];
 		}
 		if(line.error[1] <= line.delta[X]){
-			// if(line.color.axis == Y)
-			// 	add_color(line.color)
+			if(line.color.axis == Y)
+				add_color(&line.color);
 			line.error[0] += line.delta[X];
 			line.start[Y] += line.sign[Y];
 		}
