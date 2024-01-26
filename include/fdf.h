@@ -16,7 +16,7 @@
 # include <math.h>
 # include <unistd.h>
 # include <fcntl.h>
-# include "../Libft/libft.h"
+# include "../Libft/include/libft.h"
 # include "../MLX42/include/MLX42/MLX42.h"
 
 # define X 0
@@ -71,5 +71,7 @@ void    map_apply_offset(t_map *map, double offset[]);
 void    plot_point(mlx_image_t *img, t_map *map);
 
 void	destroy_fdf(t_fdf *fdf);
+t_fdf   *init_fdf(int w_height, int w_width, char *filename);
+
 
 #endif

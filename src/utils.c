@@ -31,15 +31,6 @@ int	w_count(char *s, char set)
 	return (parts);
 }
 
-size_t ft_strnlen(char *str, size_t maxlen){
-	size_t i;
-
-	i = 0;
-	while(str[i] && i < maxlen)
-		++i;
-	return(i);
-}
-
 char *ft_strndup(char *str, size_t n){
 	size_t	len;
 	char	*res;

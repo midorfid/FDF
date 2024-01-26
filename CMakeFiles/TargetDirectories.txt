@@ -1,0 +1,12 @@
+/home/anton_beton/Desktop/projects/FDF/CMakeFiles/fclean.dir
+/home/anton_beton/Desktop/projects/FDF/CMakeFiles/re.dir
+/home/anton_beton/Desktop/projects/FDF/CMakeFiles/build_mlx42.dir
+/home/anton_beton/Desktop/projects/FDF/CMakeFiles/fdf.dir
+/home/anton_beton/Desktop/projects/FDF/CMakeFiles/edit_cache.dir
+/home/anton_beton/Desktop/projects/FDF/CMakeFiles/rebuild_cache.dir
+/home/anton_beton/Desktop/projects/FDF/Libft/CMakeFiles/ft.dir
+/home/anton_beton/Desktop/projects/FDF/Libft/CMakeFiles/edit_cache.dir
+/home/anton_beton/Desktop/projects/FDF/Libft/CMakeFiles/rebuild_cache.dir
+/home/anton_beton/Desktop/projects/FDF/Libft/Get_Next_Line/CMakeFiles/get_next_line.dir
+/home/anton_beton/Desktop/projects/FDF/Libft/Get_Next_Line/CMakeFiles/edit_cache.dir
+/home/anton_beton/Desktop/projects/FDF/Libft/Get_Next_Line/CMakeFiles/rebuild_cache.dir
