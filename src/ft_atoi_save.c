@@ -52,7 +52,7 @@ int ft_atoi_save10(const char *str, int *num, int sign){
 int ft_atoi_save(const char *str, int *num){
     int     sign;
 
-    if(ft_strncmp(str,"0x", 2) == 0)
+    if(ft_strncmp(str, "0x", 2) == 0)
         return(ft_atoi_save16(str + 2, num));
     sign = 1;
     if(*str == '-'){

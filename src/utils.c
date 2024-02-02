@@ -42,3 +42,14 @@ char *ft_strndup(char *str, size_t n){
 	res[len] = '\0';
 	return(ft_memcpy(res, str, len));
 }
+
+void	free_row(char **row){
+	size_t i;
+
+	i = 0;
+	while(row[i]){
+		free(row[i]);
+		++i;
+	}
+	free(row);
+}

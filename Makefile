@@ -386,30 +386,6 @@ src/map.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/map.c.s
 .PHONY : src/map.c.s
 
-src/mem_manage.o: src/mem_manage.c.o
-.PHONY : src/mem_manage.o
-
-# target to build an object file
-src/mem_manage.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/mem_manage.c.o
-.PHONY : src/mem_manage.c.o
-
-src/mem_manage.i: src/mem_manage.c.i
-.PHONY : src/mem_manage.i
-
-# target to preprocess a source file
-src/mem_manage.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/mem_manage.c.i
-.PHONY : src/mem_manage.c.i
-
-src/mem_manage.s: src/mem_manage.c.s
-.PHONY : src/mem_manage.s
-
-# target to generate assembly for a file
-src/mem_manage.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/mem_manage.c.s
-.PHONY : src/mem_manage.c.s
-
 src/offset.o: src/offset.c.o
 .PHONY : src/offset.o
 
@@ -481,30 +457,6 @@ src/plot_img.s: src/plot_img.c.s
 src/plot_img.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/plot_img.c.s
 .PHONY : src/plot_img.c.s
-
-src/read_file.o: src/read_file.c.o
-.PHONY : src/read_file.o
-
-# target to build an object file
-src/read_file.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/read_file.c.o
-.PHONY : src/read_file.c.o
-
-src/read_file.i: src/read_file.c.i
-.PHONY : src/read_file.i
-
-# target to preprocess a source file
-src/read_file.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/read_file.c.i
-.PHONY : src/read_file.c.i
-
-src/read_file.s: src/read_file.c.s
-.PHONY : src/read_file.s
-
-# target to generate assembly for a file
-src/read_file.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/read_file.c.s
-.PHONY : src/read_file.c.s
 
 src/scale.o: src/scale.c.o
 .PHONY : src/scale.o
@@ -616,9 +568,6 @@ help:
 	@echo "... src/map.o"
 	@echo "... src/map.i"
 	@echo "... src/map.s"
-	@echo "... src/mem_manage.o"
-	@echo "... src/mem_manage.i"
-	@echo "... src/mem_manage.s"
 	@echo "... src/offset.o"
 	@echo "... src/offset.i"
 	@echo "... src/offset.s"
@@ -628,9 +577,6 @@ help:
 	@echo "... src/plot_img.o"
 	@echo "... src/plot_img.i"
 	@echo "... src/plot_img.s"
-	@echo "... src/read_file.o"
-	@echo "... src/read_file.i"
-	@echo "... src/read_file.s"
 	@echo "... src/scale.o"
 	@echo "... src/scale.i"
 	@echo "... src/scale.s"

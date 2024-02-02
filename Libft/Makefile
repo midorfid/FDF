@@ -634,6 +634,30 @@ src/ft_putstr_fd.c.s:
 	cd /home/anton_beton/Desktop/projects/FDF && $(MAKE) $(MAKESILENT) -f Libft/CMakeFiles/ft.dir/build.make Libft/CMakeFiles/ft.dir/src/ft_putstr_fd.c.s
 .PHONY : src/ft_putstr_fd.c.s
 
+src/ft_realloc.o: src/ft_realloc.c.o
+.PHONY : src/ft_realloc.o
+
+# target to build an object file
+src/ft_realloc.c.o:
+	cd /home/anton_beton/Desktop/projects/FDF && $(MAKE) $(MAKESILENT) -f Libft/CMakeFiles/ft.dir/build.make Libft/CMakeFiles/ft.dir/src/ft_realloc.c.o
+.PHONY : src/ft_realloc.c.o
+
+src/ft_realloc.i: src/ft_realloc.c.i
+.PHONY : src/ft_realloc.i
+
+# target to preprocess a source file
+src/ft_realloc.c.i:
+	cd /home/anton_beton/Desktop/projects/FDF && $(MAKE) $(MAKESILENT) -f Libft/CMakeFiles/ft.dir/build.make Libft/CMakeFiles/ft.dir/src/ft_realloc.c.i
+.PHONY : src/ft_realloc.c.i
+
+src/ft_realloc.s: src/ft_realloc.c.s
+.PHONY : src/ft_realloc.s
+
+# target to generate assembly for a file
+src/ft_realloc.c.s:
+	cd /home/anton_beton/Desktop/projects/FDF && $(MAKE) $(MAKESILENT) -f Libft/CMakeFiles/ft.dir/build.make Libft/CMakeFiles/ft.dir/src/ft_realloc.c.s
+.PHONY : src/ft_realloc.c.s
+
 src/ft_split.o: src/ft_split.c.o
 .PHONY : src/ft_split.o
 
@@ -657,6 +681,30 @@ src/ft_split.s: src/ft_split.c.s
 src/ft_split.c.s:
 	cd /home/anton_beton/Desktop/projects/FDF && $(MAKE) $(MAKESILENT) -f Libft/CMakeFiles/ft.dir/build.make Libft/CMakeFiles/ft.dir/src/ft_split.c.s
 .PHONY : src/ft_split.c.s
+
+src/ft_splitset.o: src/ft_splitset.c.o
+.PHONY : src/ft_splitset.o
+
+# target to build an object file
+src/ft_splitset.c.o:
+	cd /home/anton_beton/Desktop/projects/FDF && $(MAKE) $(MAKESILENT) -f Libft/CMakeFiles/ft.dir/build.make Libft/CMakeFiles/ft.dir/src/ft_splitset.c.o
+.PHONY : src/ft_splitset.c.o
+
+src/ft_splitset.i: src/ft_splitset.c.i
+.PHONY : src/ft_splitset.i
+
+# target to preprocess a source file
+src/ft_splitset.c.i:
+	cd /home/anton_beton/Desktop/projects/FDF && $(MAKE) $(MAKESILENT) -f Libft/CMakeFiles/ft.dir/build.make Libft/CMakeFiles/ft.dir/src/ft_splitset.c.i
+.PHONY : src/ft_splitset.c.i
+
+src/ft_splitset.s: src/ft_splitset.c.s
+.PHONY : src/ft_splitset.s
+
+# target to generate assembly for a file
+src/ft_splitset.c.s:
+	cd /home/anton_beton/Desktop/projects/FDF && $(MAKE) $(MAKESILENT) -f Libft/CMakeFiles/ft.dir/build.make Libft/CMakeFiles/ft.dir/src/ft_splitset.c.s
+.PHONY : src/ft_splitset.c.s
 
 src/ft_strchr.o: src/ft_strchr.c.o
 .PHONY : src/ft_strchr.o
@@ -1138,9 +1186,15 @@ help:
 	@echo "... src/ft_putstr_fd.o"
 	@echo "... src/ft_putstr_fd.i"
 	@echo "... src/ft_putstr_fd.s"
+	@echo "... src/ft_realloc.o"
+	@echo "... src/ft_realloc.i"
+	@echo "... src/ft_realloc.s"
 	@echo "... src/ft_split.o"
 	@echo "... src/ft_split.i"
 	@echo "... src/ft_split.s"
+	@echo "... src/ft_splitset.o"
+	@echo "... src/ft_splitset.i"
+	@echo "... src/ft_splitset.s"
 	@echo "... src/ft_strchr.o"
 	@echo "... src/ft_strchr.i"
 	@echo "... src/ft_strchr.s"

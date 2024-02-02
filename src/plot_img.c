@@ -17,7 +17,8 @@ void    draw_point(int x, int y, int color, void *data){
     mlx_image_t *img;
 
     img = data;
-    if(x >= 0 && (uint32_t)x < img->width && y >= 0 && y < img->height)
+    if(x >= 0 && (uint32_t)x < img->width && y >= 0 \
+        && (uint32_t)y < img->height)
         mlx_put_pixel(img, x, y, color);
     (void)color;
 }

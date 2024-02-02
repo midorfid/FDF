@@ -16,8 +16,6 @@ set (SRCS
     src/update_screen.c
     src/drawline.c
     src/utils.c
-    src/read_file.c
-    src/mem_manage.c
 )
 set (EXEC_NAME fdf)
 
@@ -37,7 +35,7 @@ add_custom_target(build_mlx42 ALL
                    COMMENT "Original MLX42 makefile target")
 add_library(mlx42 STATIC IMPORTED)
 set_property(TARGET mlx42 APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
-set_target_properties(mlx42 PROPERTIES IMPORTED_LOCATION_NOCONFIG "${CMAKE_CURRENT_SOURCE_DIR}/lib/MLX42/libmlx42.a")
+set_target_properties(mlx42 PROPERTIES IMPORTED_LOCATION_NOCONFIG "${CMAKE_CURRENT_SOURCE_DIR}/MLX42/libmlx42.a")
 add_dependencies(mlx42 build_mlx42)
 target_include_directories(mlx42 INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/MLX42/include)
 

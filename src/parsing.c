@@ -31,8 +31,8 @@ char    **get_row(int fd){
 
     line = get_next_line(fd);
     if(!line)
-        return(line);
-    trimmed = alloc_or_perror(ft_split(line, " "));
+        return(NULL);
+    trimmed = alloc_or_perror(ft_splitset(line, " \n"));
     free(line);
     return(trimmed);
 }
@@ -78,13 +78,15 @@ int parse_line(int fd, t_map *map){
 
         if(map->column != 0 && i > map->column)
             error_msg_exit("row is too long", EXIT_FAILURE);
-        if(parse_color_num(row[i], &color, &height) < 0)
+        if(parse_color_num(row[i], &color, &height) < 0){
+            printf("%d\n", parse_color_num(row[i], &color, &height));
             error_msg_exit("invalid number", EXIT_FAILURE);
+        }
         add_point(&map->point, (t_points){.cords = \
                 {i, map->row, height}, .color = color});
         ++i;
     }
-    free_row(row, i);
+    free_row(row);
     map->column = i;
     return(0);
 }
@@ -93,6 +95,7 @@ t_map *parse_map(char *filename){
     int     fd;
     t_map   *map;
 
+    map = init_map();
     fd = open(filename, O_RDONLY);
     if(fd < 0){
         perror("fdf");

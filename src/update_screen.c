@@ -61,7 +61,7 @@ void    clear_img(mlx_image_t *img){
 void    update_screen(t_fdf *data){
     t_map   *map;
 
-    map = dup_map(&data->map);
+    map = dup_map(data->map);
     translate_map(map, data);
     scale_map(map, data);
     if(data->projection == ISO)
@@ -70,7 +70,7 @@ void    update_screen(t_fdf *data){
     if(map->column == 1 && map->row == 1)
         plot_point(data->img[!data->current_img], map);
     else
-        plot_lines(data->img[!data->current_img], map);
+        plot_img(data->img[!data->current_img], map);
     mlx_set_instance_depth(&data->img[!data->current_img] \
             ->instances[data->img_idx[!data->current_img]], 0);
     mlx_set_instance_depth(&data->img[data->current_img] \

@@ -70,16 +70,6 @@
   "file": "/home/anton_beton/Desktop/projects/FDF/src/utils.c"
 },
 {
-  "directory": "/home/anton_beton/Desktop/projects/FDF",
-  "command": "/usr/bin/cc  -I/home/anton_beton/Desktop/projects/FDF/include -I/home/anton_beton/Desktop/projects/FDF/Libft/include -I/home/anton_beton/Desktop/projects/FDF/Libft/Get_Next_Line/include -isystem /home/anton_beton/Desktop/projects/FDF/MLX42/include -Wall -Werror -Wextra -Ofast -O3 -o CMakeFiles/fdf.dir/src/read_file.c.o -c /home/anton_beton/Desktop/projects/FDF/src/read_file.c",
-  "file": "/home/anton_beton/Desktop/projects/FDF/src/read_file.c"
-},
-{
-  "directory": "/home/anton_beton/Desktop/projects/FDF",
-  "command": "/usr/bin/cc  -I/home/anton_beton/Desktop/projects/FDF/include -I/home/anton_beton/Desktop/projects/FDF/Libft/include -I/home/anton_beton/Desktop/projects/FDF/Libft/Get_Next_Line/include -isystem /home/anton_beton/Desktop/projects/FDF/MLX42/include -Wall -Werror -Wextra -Ofast -O3 -o CMakeFiles/fdf.dir/src/mem_manage.c.o -c /home/anton_beton/Desktop/projects/FDF/src/mem_manage.c",
-  "file": "/home/anton_beton/Desktop/projects/FDF/src/mem_manage.c"
-},
-{
   "directory": "/home/anton_beton/Desktop/projects/FDF/Libft",
   "command": "/usr/bin/cc  -I/home/anton_beton/Desktop/projects/FDF/Libft/include -Wall -Werror -Wextra -Ofast -O3 -o CMakeFiles/ft.dir/src/ft_isalnum.c.o -c /home/anton_beton/Desktop/projects/FDF/Libft/src/ft_isalnum.c",
   "file": "/home/anton_beton/Desktop/projects/FDF/Libft/src/ft_isalnum.c"
@@ -241,6 +231,11 @@
 },
 {
   "directory": "/home/anton_beton/Desktop/projects/FDF/Libft",
+  "command": "/usr/bin/cc  -I/home/anton_beton/Desktop/projects/FDF/Libft/include -Wall -Werror -Wextra -Ofast -O3 -o CMakeFiles/ft.dir/src/ft_realloc.c.o -c /home/anton_beton/Desktop/projects/FDF/Libft/src/ft_realloc.c",
+  "file": "/home/anton_beton/Desktop/projects/FDF/Libft/src/ft_realloc.c"
+},
+{
+  "directory": "/home/anton_beton/Desktop/projects/FDF/Libft",
   "command": "/usr/bin/cc  -I/home/anton_beton/Desktop/projects/FDF/Libft/include -Wall -Werror -Wextra -Ofast -O3 -o CMakeFiles/ft.dir/src/ft_strmapi.c.o -c /home/anton_beton/Desktop/projects/FDF/Libft/src/ft_strmapi.c",
   "file": "/home/anton_beton/Desktop/projects/FDF/Libft/src/ft_strmapi.c"
 },
@@ -273,6 +268,11 @@
   "directory": "/home/anton_beton/Desktop/projects/FDF/Libft",
   "command": "/usr/bin/cc  -I/home/anton_beton/Desktop/projects/FDF/Libft/include -Wall -Werror -Wextra -Ofast -O3 -o CMakeFiles/ft.dir/src/ft_lstnew.c.o -c /home/anton_beton/Desktop/projects/FDF/Libft/src/ft_lstnew.c",
   "file": "/home/anton_beton/Desktop/projects/FDF/Libft/src/ft_lstnew.c"
+},
+{
+  "directory": "/home/anton_beton/Desktop/projects/FDF/Libft",
+  "command": "/usr/bin/cc  -I/home/anton_beton/Desktop/projects/FDF/Libft/include -Wall -Werror -Wextra -Ofast -O3 -o CMakeFiles/ft.dir/src/ft_splitset.c.o -c /home/anton_beton/Desktop/projects/FDF/Libft/src/ft_splitset.c",
+  "file": "/home/anton_beton/Desktop/projects/FDF/Libft/src/ft_splitset.c"
 },
 {
   "directory": "/home/anton_beton/Desktop/projects/FDF/Libft/Get_Next_Line",

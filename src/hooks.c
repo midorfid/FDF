@@ -39,8 +39,8 @@ void    resize_hook(int32_t width, int32_t height, void *input_data){
 
     data = input_data;
     data->update = 1;
-    alloc_or_perror(mlx_resize_image(data->img[0], width, height));
-    alloc_or_perror(mlx_resize_image(data->img[1], width, height));
+    exit_if_true(!mlx_resize_image(data->img[0], width, height));
+    exit_if_true(!mlx_resize_image(data->img[1], width, height));
 }
 
 void    key_hook(mlx_key_data_t keydata, void *input_data){

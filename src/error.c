@@ -1,5 +1,4 @@
 #include "../include/fdf.h"
-#include <stdio.h>
 
 void    perror_exit(const char *s, int error_msg){
     perror(s);

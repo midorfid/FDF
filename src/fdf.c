@@ -8,8 +8,8 @@ void    init_mlx(int w_height, int w_width, char *window_name, t_fdf *fdf){
     fdf->mlx = alloc_or_perror(mlx_init(w_width, w_height, window_name, true));
     fdf->img[0] = alloc_or_perror(mlx_new_image(fdf->mlx, w_width, w_height));
     fdf->img[1] = alloc_or_perror(mlx_new_image(fdf->mlx, w_width, w_height));
-    fdf->img_idx[0] = alloc_or_perror(mlx_image_to_window(fdf->mlx, fdf->img[0], 0, 0));
-    fdf->img_idx[1] = alloc_or_perror(mlx_image_to_window(fdf->mlx, fdf->img[1], 0, 0));
+    fdf->img_idx[0] = mlx_image_to_window(fdf->mlx, fdf->img[0], 0, 0);
+    fdf->img_idx[1] = mlx_image_to_window(fdf->mlx, fdf->img[1], 0, 0);
     exit_if_true(fdf->img_idx[0] < 0 || fdf->img_idx[1] < 0);
     mlx_set_instance_depth(&fdf->img[1]->instances[fdf->img_idx[1]], 1);
     exit_if_true(!mlx_loop_hook(fdf->mlx, loop_hook, fdf));

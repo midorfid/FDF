@@ -517,10 +517,24 @@ Libft/CMakeFiles/ft.dir/src/ft_itoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft.dir/src/ft_itoa.c.s"
 	cd /home/anton_beton/Desktop/projects/FDF/Libft && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anton_beton/Desktop/projects/FDF/Libft/src/ft_itoa.c -o CMakeFiles/ft.dir/src/ft_itoa.c.s
 
+Libft/CMakeFiles/ft.dir/src/ft_realloc.c.o: Libft/CMakeFiles/ft.dir/flags.make
+Libft/CMakeFiles/ft.dir/src/ft_realloc.c.o: Libft/src/ft_realloc.c
+Libft/CMakeFiles/ft.dir/src/ft_realloc.c.o: Libft/CMakeFiles/ft.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton_beton/Desktop/projects/FDF/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object Libft/CMakeFiles/ft.dir/src/ft_realloc.c.o"
+	cd /home/anton_beton/Desktop/projects/FDF/Libft && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Libft/CMakeFiles/ft.dir/src/ft_realloc.c.o -MF CMakeFiles/ft.dir/src/ft_realloc.c.o.d -o CMakeFiles/ft.dir/src/ft_realloc.c.o -c /home/anton_beton/Desktop/projects/FDF/Libft/src/ft_realloc.c
+
+Libft/CMakeFiles/ft.dir/src/ft_realloc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft.dir/src/ft_realloc.c.i"
+	cd /home/anton_beton/Desktop/projects/FDF/Libft && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anton_beton/Desktop/projects/FDF/Libft/src/ft_realloc.c > CMakeFiles/ft.dir/src/ft_realloc.c.i
+
+Libft/CMakeFiles/ft.dir/src/ft_realloc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft.dir/src/ft_realloc.c.s"
+	cd /home/anton_beton/Desktop/projects/FDF/Libft && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anton_beton/Desktop/projects/FDF/Libft/src/ft_realloc.c -o CMakeFiles/ft.dir/src/ft_realloc.c.s
+
 Libft/CMakeFiles/ft.dir/src/ft_strmapi.c.o: Libft/CMakeFiles/ft.dir/flags.make
 Libft/CMakeFiles/ft.dir/src/ft_strmapi.c.o: Libft/src/ft_strmapi.c
 Libft/CMakeFiles/ft.dir/src/ft_strmapi.c.o: Libft/CMakeFiles/ft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton_beton/Desktop/projects/FDF/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object Libft/CMakeFiles/ft.dir/src/ft_strmapi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton_beton/Desktop/projects/FDF/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object Libft/CMakeFiles/ft.dir/src/ft_strmapi.c.o"
 	cd /home/anton_beton/Desktop/projects/FDF/Libft && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Libft/CMakeFiles/ft.dir/src/ft_strmapi.c.o -MF CMakeFiles/ft.dir/src/ft_strmapi.c.o.d -o CMakeFiles/ft.dir/src/ft_strmapi.c.o -c /home/anton_beton/Desktop/projects/FDF/Libft/src/ft_strmapi.c
 
 Libft/CMakeFiles/ft.dir/src/ft_strmapi.c.i: cmake_force
@@ -534,7 +548,7 @@ Libft/CMakeFiles/ft.dir/src/ft_strmapi.c.s: cmake_force
 Libft/CMakeFiles/ft.dir/src/ft_striteri.c.o: Libft/CMakeFiles/ft.dir/flags.make
 Libft/CMakeFiles/ft.dir/src/ft_striteri.c.o: Libft/src/ft_striteri.c
 Libft/CMakeFiles/ft.dir/src/ft_striteri.c.o: Libft/CMakeFiles/ft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton_beton/Desktop/projects/FDF/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object Libft/CMakeFiles/ft.dir/src/ft_striteri.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton_beton/Desktop/projects/FDF/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object Libft/CMakeFiles/ft.dir/src/ft_striteri.c.o"
 	cd /home/anton_beton/Desktop/projects/FDF/Libft && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Libft/CMakeFiles/ft.dir/src/ft_striteri.c.o -MF CMakeFiles/ft.dir/src/ft_striteri.c.o.d -o CMakeFiles/ft.dir/src/ft_striteri.c.o -c /home/anton_beton/Desktop/projects/FDF/Libft/src/ft_striteri.c
 
 Libft/CMakeFiles/ft.dir/src/ft_striteri.c.i: cmake_force
@@ -548,7 +562,7 @@ Libft/CMakeFiles/ft.dir/src/ft_striteri.c.s: cmake_force
 Libft/CMakeFiles/ft.dir/src/ft_putchar_fd.c.o: Libft/CMakeFiles/ft.dir/flags.make
 Libft/CMakeFiles/ft.dir/src/ft_putchar_fd.c.o: Libft/src/ft_putchar_fd.c
 Libft/CMakeFiles/ft.dir/src/ft_putchar_fd.c.o: Libft/CMakeFiles/ft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton_beton/Desktop/projects/FDF/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object Libft/CMakeFiles/ft.dir/src/ft_putchar_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton_beton/Desktop/projects/FDF/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object Libft/CMakeFiles/ft.dir/src/ft_putchar_fd.c.o"
 	cd /home/anton_beton/Desktop/projects/FDF/Libft && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Libft/CMakeFiles/ft.dir/src/ft_putchar_fd.c.o -MF CMakeFiles/ft.dir/src/ft_putchar_fd.c.o.d -o CMakeFiles/ft.dir/src/ft_putchar_fd.c.o -c /home/anton_beton/Desktop/projects/FDF/Libft/src/ft_putchar_fd.c
 
 Libft/CMakeFiles/ft.dir/src/ft_putchar_fd.c.i: cmake_force
@@ -562,7 +576,7 @@ Libft/CMakeFiles/ft.dir/src/ft_putchar_fd.c.s: cmake_force
 Libft/CMakeFiles/ft.dir/src/ft_putstr_fd.c.o: Libft/CMakeFiles/ft.dir/flags.make
 Libft/CMakeFiles/ft.dir/src/ft_putstr_fd.c.o: Libft/src/ft_putstr_fd.c
 Libft/CMakeFiles/ft.dir/src/ft_putstr_fd.c.o: Libft/CMakeFiles/ft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton_beton/Desktop/projects/FDF/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object Libft/CMakeFiles/ft.dir/src/ft_putstr_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton_beton/Desktop/projects/FDF/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object Libft/CMakeFiles/ft.dir/src/ft_putstr_fd.c.o"
 	cd /home/anton_beton/Desktop/projects/FDF/Libft && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Libft/CMakeFiles/ft.dir/src/ft_putstr_fd.c.o -MF CMakeFiles/ft.dir/src/ft_putstr_fd.c.o.d -o CMakeFiles/ft.dir/src/ft_putstr_fd.c.o -c /home/anton_beton/Desktop/projects/FDF/Libft/src/ft_putstr_fd.c
 
 Libft/CMakeFiles/ft.dir/src/ft_putstr_fd.c.i: cmake_force
@@ -576,7 +590,7 @@ Libft/CMakeFiles/ft.dir/src/ft_putstr_fd.c.s: cmake_force
 Libft/CMakeFiles/ft.dir/src/ft_putendl_fd.c.o: Libft/CMakeFiles/ft.dir/flags.make
 Libft/CMakeFiles/ft.dir/src/ft_putendl_fd.c.o: Libft/src/ft_putendl_fd.c
 Libft/CMakeFiles/ft.dir/src/ft_putendl_fd.c.o: Libft/CMakeFiles/ft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton_beton/Desktop/projects/FDF/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object Libft/CMakeFiles/ft.dir/src/ft_putendl_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton_beton/Desktop/projects/FDF/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object Libft/CMakeFiles/ft.dir/src/ft_putendl_fd.c.o"
 	cd /home/anton_beton/Desktop/projects/FDF/Libft && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Libft/CMakeFiles/ft.dir/src/ft_putendl_fd.c.o -MF CMakeFiles/ft.dir/src/ft_putendl_fd.c.o.d -o CMakeFiles/ft.dir/src/ft_putendl_fd.c.o -c /home/anton_beton/Desktop/projects/FDF/Libft/src/ft_putendl_fd.c
 
 Libft/CMakeFiles/ft.dir/src/ft_putendl_fd.c.i: cmake_force
@@ -590,7 +604,7 @@ Libft/CMakeFiles/ft.dir/src/ft_putendl_fd.c.s: cmake_force
 Libft/CMakeFiles/ft.dir/src/ft_putnbr_fd.c.o: Libft/CMakeFiles/ft.dir/flags.make
 Libft/CMakeFiles/ft.dir/src/ft_putnbr_fd.c.o: Libft/src/ft_putnbr_fd.c
 Libft/CMakeFiles/ft.dir/src/ft_putnbr_fd.c.o: Libft/CMakeFiles/ft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton_beton/Desktop/projects/FDF/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object Libft/CMakeFiles/ft.dir/src/ft_putnbr_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton_beton/Desktop/projects/FDF/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object Libft/CMakeFiles/ft.dir/src/ft_putnbr_fd.c.o"
 	cd /home/anton_beton/Desktop/projects/FDF/Libft && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Libft/CMakeFiles/ft.dir/src/ft_putnbr_fd.c.o -MF CMakeFiles/ft.dir/src/ft_putnbr_fd.c.o.d -o CMakeFiles/ft.dir/src/ft_putnbr_fd.c.o -c /home/anton_beton/Desktop/projects/FDF/Libft/src/ft_putnbr_fd.c
 
 Libft/CMakeFiles/ft.dir/src/ft_putnbr_fd.c.i: cmake_force
@@ -604,7 +618,7 @@ Libft/CMakeFiles/ft.dir/src/ft_putnbr_fd.c.s: cmake_force
 Libft/CMakeFiles/ft.dir/src/ft_lstnew.c.o: Libft/CMakeFiles/ft.dir/flags.make
 Libft/CMakeFiles/ft.dir/src/ft_lstnew.c.o: Libft/src/ft_lstnew.c
 Libft/CMakeFiles/ft.dir/src/ft_lstnew.c.o: Libft/CMakeFiles/ft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton_beton/Desktop/projects/FDF/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object Libft/CMakeFiles/ft.dir/src/ft_lstnew.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton_beton/Desktop/projects/FDF/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object Libft/CMakeFiles/ft.dir/src/ft_lstnew.c.o"
 	cd /home/anton_beton/Desktop/projects/FDF/Libft && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Libft/CMakeFiles/ft.dir/src/ft_lstnew.c.o -MF CMakeFiles/ft.dir/src/ft_lstnew.c.o.d -o CMakeFiles/ft.dir/src/ft_lstnew.c.o -c /home/anton_beton/Desktop/projects/FDF/Libft/src/ft_lstnew.c
 
 Libft/CMakeFiles/ft.dir/src/ft_lstnew.c.i: cmake_force
@@ -614,6 +628,20 @@ Libft/CMakeFiles/ft.dir/src/ft_lstnew.c.i: cmake_force
 Libft/CMakeFiles/ft.dir/src/ft_lstnew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft.dir/src/ft_lstnew.c.s"
 	cd /home/anton_beton/Desktop/projects/FDF/Libft && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anton_beton/Desktop/projects/FDF/Libft/src/ft_lstnew.c -o CMakeFiles/ft.dir/src/ft_lstnew.c.s
+
+Libft/CMakeFiles/ft.dir/src/ft_splitset.c.o: Libft/CMakeFiles/ft.dir/flags.make
+Libft/CMakeFiles/ft.dir/src/ft_splitset.c.o: Libft/src/ft_splitset.c
+Libft/CMakeFiles/ft.dir/src/ft_splitset.c.o: Libft/CMakeFiles/ft.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton_beton/Desktop/projects/FDF/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object Libft/CMakeFiles/ft.dir/src/ft_splitset.c.o"
+	cd /home/anton_beton/Desktop/projects/FDF/Libft && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Libft/CMakeFiles/ft.dir/src/ft_splitset.c.o -MF CMakeFiles/ft.dir/src/ft_splitset.c.o.d -o CMakeFiles/ft.dir/src/ft_splitset.c.o -c /home/anton_beton/Desktop/projects/FDF/Libft/src/ft_splitset.c
+
+Libft/CMakeFiles/ft.dir/src/ft_splitset.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft.dir/src/ft_splitset.c.i"
+	cd /home/anton_beton/Desktop/projects/FDF/Libft && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anton_beton/Desktop/projects/FDF/Libft/src/ft_splitset.c > CMakeFiles/ft.dir/src/ft_splitset.c.i
+
+Libft/CMakeFiles/ft.dir/src/ft_splitset.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft.dir/src/ft_splitset.c.s"
+	cd /home/anton_beton/Desktop/projects/FDF/Libft && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anton_beton/Desktop/projects/FDF/Libft/src/ft_splitset.c -o CMakeFiles/ft.dir/src/ft_splitset.c.s
 
 # Object files for target ft
 ft_OBJECTS = \
@@ -649,13 +677,15 @@ ft_OBJECTS = \
 "CMakeFiles/ft.dir/src/ft_strtrim.c.o" \
 "CMakeFiles/ft.dir/src/ft_split.c.o" \
 "CMakeFiles/ft.dir/src/ft_itoa.c.o" \
+"CMakeFiles/ft.dir/src/ft_realloc.c.o" \
 "CMakeFiles/ft.dir/src/ft_strmapi.c.o" \
 "CMakeFiles/ft.dir/src/ft_striteri.c.o" \
 "CMakeFiles/ft.dir/src/ft_putchar_fd.c.o" \
 "CMakeFiles/ft.dir/src/ft_putstr_fd.c.o" \
 "CMakeFiles/ft.dir/src/ft_putendl_fd.c.o" \
 "CMakeFiles/ft.dir/src/ft_putnbr_fd.c.o" \
-"CMakeFiles/ft.dir/src/ft_lstnew.c.o"
+"CMakeFiles/ft.dir/src/ft_lstnew.c.o" \
+"CMakeFiles/ft.dir/src/ft_splitset.c.o"
 
 # External object files for target ft
 ft_EXTERNAL_OBJECTS =
@@ -692,6 +722,7 @@ Libft/libft.a: Libft/CMakeFiles/ft.dir/src/ft_strjoin.c.o
 Libft/libft.a: Libft/CMakeFiles/ft.dir/src/ft_strtrim.c.o
 Libft/libft.a: Libft/CMakeFiles/ft.dir/src/ft_split.c.o
 Libft/libft.a: Libft/CMakeFiles/ft.dir/src/ft_itoa.c.o
+Libft/libft.a: Libft/CMakeFiles/ft.dir/src/ft_realloc.c.o
 Libft/libft.a: Libft/CMakeFiles/ft.dir/src/ft_strmapi.c.o
 Libft/libft.a: Libft/CMakeFiles/ft.dir/src/ft_striteri.c.o
 Libft/libft.a: Libft/CMakeFiles/ft.dir/src/ft_putchar_fd.c.o
@@ -699,9 +730,10 @@ Libft/libft.a: Libft/CMakeFiles/ft.dir/src/ft_putstr_fd.c.o
 Libft/libft.a: Libft/CMakeFiles/ft.dir/src/ft_putendl_fd.c.o
 Libft/libft.a: Libft/CMakeFiles/ft.dir/src/ft_putnbr_fd.c.o
 Libft/libft.a: Libft/CMakeFiles/ft.dir/src/ft_lstnew.c.o
+Libft/libft.a: Libft/CMakeFiles/ft.dir/src/ft_splitset.c.o
 Libft/libft.a: Libft/CMakeFiles/ft.dir/build.make
 Libft/libft.a: Libft/CMakeFiles/ft.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anton_beton/Desktop/projects/FDF/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking C static library libft.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anton_beton/Desktop/projects/FDF/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Linking C static library libft.a"
 	cd /home/anton_beton/Desktop/projects/FDF/Libft && $(CMAKE_COMMAND) -P CMakeFiles/ft.dir/cmake_clean_target.cmake
 	cd /home/anton_beton/Desktop/projects/FDF/Libft && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ft.dir/link.txt --verbose=$(VERBOSE)
 

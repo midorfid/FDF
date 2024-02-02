@@ -1,5 +1,5 @@
-CMakeFiles/fdf.dir/src/fdf.c.o: \
- /home/anton_beton/Desktop/projects/FDF/src/fdf.c \
+CMakeFiles/fdf.dir/src/mem_manage.c.o: \
+ /home/anton_beton/Desktop/projects/FDF/src/mem_manage.c \
  /usr/include/stdc-predef.h \
  /home/anton_beton/Desktop/projects/FDF/src/../include/fdf.h \
  /usr/include/math.h \
@@ -39,7 +39,17 @@ CMakeFiles/fdf.dir/src/fdf.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl2.h /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h \
  /home/anton_beton/Desktop/projects/FDF/src/../include/../Libft/include/libft.h \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -65,6 +75,7 @@ CMakeFiles/fdf.dir/src/fdf.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+ /home/anton_beton/Desktop/projects/FDF/src/../include/../Libft/Get_Next_Line/get_next_line.h \
  /home/anton_beton/Desktop/projects/FDF/src/../include/../MLX42/include/MLX42/MLX42.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \

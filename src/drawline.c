@@ -22,7 +22,7 @@ t_color	init_color(t_points p1, t_points p2, int delta[2]){
 
 	ft_bzero(&color, sizeof(t_color));
 	if(p1.color == p2.color){
-		color.orginal == p1.color;
+		color.orginal = p1.color;
 		return (color);
 	}
 	if(delta[X] < delta[Y])
@@ -58,7 +58,7 @@ int		get_color(t_color *color){
 	uint8_t *_result;
 
 	if(!color->alt)
-		return(color->current);
+		return(color->orginal);
 	_result = (uint8_t *)&result;
 	i = 0;
 	while(i < 4){
