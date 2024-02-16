@@ -15,7 +15,7 @@ t_map *dup_map(t_map *map){
 
     res = alloc_or_perror(malloc(sizeof(t_map)));
     ft_memcpy(res, map, sizeof(t_map));
-    points_size = map->column * map->row * sizeof(map->point);
+    points_size = map->column * map->row * sizeof(t_points);
     res->point = alloc_or_perror(malloc(points_size));
     ft_memcpy(res->point, map->point, points_size);
     return(res);

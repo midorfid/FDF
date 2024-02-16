@@ -7,6 +7,6 @@
 /home/anton_beton/Desktop/projects/FDF/Libft/CMakeFiles/ft.dir
 /home/anton_beton/Desktop/projects/FDF/Libft/CMakeFiles/edit_cache.dir
 /home/anton_beton/Desktop/projects/FDF/Libft/CMakeFiles/rebuild_cache.dir
-/home/anton_beton/Desktop/projects/FDF/Libft/Get_Next_Line/CMakeFiles/get_next_line.dir
-/home/anton_beton/Desktop/projects/FDF/Libft/Get_Next_Line/CMakeFiles/edit_cache.dir
-/home/anton_beton/Desktop/projects/FDF/Libft/Get_Next_Line/CMakeFiles/rebuild_cache.dir
+/home/anton_beton/Desktop/projects/FDF/Libft/get_next_line/CMakeFiles/get_next_line.dir
+/home/anton_beton/Desktop/projects/FDF/Libft/get_next_line/CMakeFiles/edit_cache.dir
+/home/anton_beton/Desktop/projects/FDF/Libft/get_next_line/CMakeFiles/rebuild_cache.dir

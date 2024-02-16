@@ -69,14 +69,14 @@ int parse_line(int fd, t_map *map){
     int     height;
     
     row = get_row(fd);
-    if(!row)
+    if(row == NULL)
         return(1);
-    if(!row[0])
+    if(row[0] == NULL)
         error_msg_exit("line is empty", EXIT_FAILURE);
     i = 0;
     while(row[i]){
 
-        if(map->column != 0 && i > map->column)
+        if(map->column != 0 && i >= map->column)
             error_msg_exit("row is too long", EXIT_FAILURE);
         if(parse_color_num(row[i], &color, &height) < 0){
             printf("%d\n", parse_color_num(row[i], &color, &height));

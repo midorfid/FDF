@@ -303,7 +303,7 @@ fdf: CMakeFiles/fdf.dir/build.make
 fdf: MLX42/libmlx42.a
 fdf: /usr/lib/x86_64-linux-gnu/libglfw.so
 fdf: Libft/libft.a
-fdf: Libft/Get_Next_Line/libget_next_line.a
+fdf: Libft/get_next_line/libget_next_line.a
 fdf: CMakeFiles/fdf.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anton_beton/Desktop/projects/FDF/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking C executable fdf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fdf.dir/link.txt --verbose=$(VERBOSE)

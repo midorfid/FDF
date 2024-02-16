@@ -18,7 +18,7 @@
 # include <fcntl.h>
 # include <stdio.h>
 # include "../Libft/include/libft.h"
-# include "../Libft/Get_Next_Line/get_next_line.h"
+# include "../Libft/get_next_line/include/get_next_line.h"
 # include "../MLX42/include/MLX42/MLX42.h"
 
 # define X 0
@@ -91,4 +91,5 @@ void	free_row(char **row);
 int		w_count(char *s, char set);
 
 void    update_screen(t_fdf *data);
+void    start_renderloop_fdf(t_fdf *fdf);
 #endif

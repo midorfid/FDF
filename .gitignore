@@ -1,0 +1,5 @@
+fdf
+.vscode
+.DS_Store
+build
+*.o

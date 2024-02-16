@@ -51,6 +51,6 @@ endif()
 
 #optionaly add libft:
 add_subdirectory(./Libft)
-add_subdirectory(./Libft/Get_Next_Line)
+add_subdirectory(./Libft/get_next_line)
 target_link_libraries(${EXEC_NAME} PRIVATE ft)
 target_link_libraries(${EXEC_NAME} PRIVATE get_next_line)

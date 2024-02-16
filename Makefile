@@ -191,7 +191,7 @@ get_next_line: cmake_check_build_system
 
 # fast build rule for target.
 get_next_line/fast:
-	$(MAKE) $(MAKESILENT) -f Libft/Get_Next_Line/CMakeFiles/get_next_line.dir/build.make Libft/Get_Next_Line/CMakeFiles/get_next_line.dir/build
+	$(MAKE) $(MAKESILENT) -f Libft/get_next_line/CMakeFiles/get_next_line.dir/build.make Libft/get_next_line/CMakeFiles/get_next_line.dir/build
 .PHONY : get_next_line/fast
 
 src/apply_iso.o: src/apply_iso.c.o

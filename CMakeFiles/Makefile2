@@ -66,12 +66,12 @@ CMAKE_BINARY_DIR = /home/anton_beton/Desktop/projects/FDF
 all: CMakeFiles/build_mlx42.dir/all
 all: CMakeFiles/fdf.dir/all
 all: Libft/all
-all: Libft/Get_Next_Line/all
+all: Libft/get_next_line/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: Libft/preinstall
-preinstall: Libft/Get_Next_Line/preinstall
+preinstall: Libft/get_next_line/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -80,7 +80,7 @@ clean: CMakeFiles/re.dir/clean
 clean: CMakeFiles/build_mlx42.dir/clean
 clean: CMakeFiles/fdf.dir/clean
 clean: Libft/clean
-clean: Libft/Get_Next_Line/clean
+clean: Libft/get_next_line/clean
 .PHONY : clean
 
 #=============================================================================
@@ -99,19 +99,19 @@ Libft/clean: Libft/CMakeFiles/ft.dir/clean
 .PHONY : Libft/clean
 
 #=============================================================================
-# Directory level rules for directory Libft/Get_Next_Line
+# Directory level rules for directory Libft/get_next_line
 
 # Recursive "all" directory target.
-Libft/Get_Next_Line/all: Libft/Get_Next_Line/CMakeFiles/get_next_line.dir/all
-.PHONY : Libft/Get_Next_Line/all
+Libft/get_next_line/all: Libft/get_next_line/CMakeFiles/get_next_line.dir/all
+.PHONY : Libft/get_next_line/all
 
 # Recursive "preinstall" directory target.
-Libft/Get_Next_Line/preinstall:
-.PHONY : Libft/Get_Next_Line/preinstall
+Libft/get_next_line/preinstall:
+.PHONY : Libft/get_next_line/preinstall
 
 # Recursive "clean" directory target.
-Libft/Get_Next_Line/clean: Libft/Get_Next_Line/CMakeFiles/get_next_line.dir/clean
-.PHONY : Libft/Get_Next_Line/clean
+Libft/get_next_line/clean: Libft/get_next_line/CMakeFiles/get_next_line.dir/clean
+.PHONY : Libft/get_next_line/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/fclean.dir
@@ -197,7 +197,7 @@ CMakeFiles/build_mlx42.dir/clean:
 # All Build rule for target.
 CMakeFiles/fdf.dir/all: CMakeFiles/build_mlx42.dir/all
 CMakeFiles/fdf.dir/all: Libft/CMakeFiles/ft.dir/all
-CMakeFiles/fdf.dir/all: Libft/Get_Next_Line/CMakeFiles/get_next_line.dir/all
+CMakeFiles/fdf.dir/all: Libft/get_next_line/CMakeFiles/get_next_line.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton_beton/Desktop/projects/FDF/CMakeFiles --progress-num=2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target fdf"
@@ -246,30 +246,30 @@ Libft/CMakeFiles/ft.dir/clean:
 .PHONY : Libft/CMakeFiles/ft.dir/clean
 
 #=============================================================================
-# Target rules for target Libft/Get_Next_Line/CMakeFiles/get_next_line.dir
+# Target rules for target Libft/get_next_line/CMakeFiles/get_next_line.dir
 
 # All Build rule for target.
-Libft/Get_Next_Line/CMakeFiles/get_next_line.dir/all:
-	$(MAKE) $(MAKESILENT) -f Libft/Get_Next_Line/CMakeFiles/get_next_line.dir/build.make Libft/Get_Next_Line/CMakeFiles/get_next_line.dir/depend
-	$(MAKE) $(MAKESILENT) -f Libft/Get_Next_Line/CMakeFiles/get_next_line.dir/build.make Libft/Get_Next_Line/CMakeFiles/get_next_line.dir/build
+Libft/get_next_line/CMakeFiles/get_next_line.dir/all:
+	$(MAKE) $(MAKESILENT) -f Libft/get_next_line/CMakeFiles/get_next_line.dir/build.make Libft/get_next_line/CMakeFiles/get_next_line.dir/depend
+	$(MAKE) $(MAKESILENT) -f Libft/get_next_line/CMakeFiles/get_next_line.dir/build.make Libft/get_next_line/CMakeFiles/get_next_line.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton_beton/Desktop/projects/FDF/CMakeFiles --progress-num=59,60,61 "Built target get_next_line"
-.PHONY : Libft/Get_Next_Line/CMakeFiles/get_next_line.dir/all
+.PHONY : Libft/get_next_line/CMakeFiles/get_next_line.dir/all
 
 # Build rule for subdir invocation for target.
-Libft/Get_Next_Line/CMakeFiles/get_next_line.dir/rule: cmake_check_build_system
+Libft/get_next_line/CMakeFiles/get_next_line.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton_beton/Desktop/projects/FDF/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Libft/Get_Next_Line/CMakeFiles/get_next_line.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Libft/get_next_line/CMakeFiles/get_next_line.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton_beton/Desktop/projects/FDF/CMakeFiles 0
-.PHONY : Libft/Get_Next_Line/CMakeFiles/get_next_line.dir/rule
+.PHONY : Libft/get_next_line/CMakeFiles/get_next_line.dir/rule
 
 # Convenience name for target.
-get_next_line: Libft/Get_Next_Line/CMakeFiles/get_next_line.dir/rule
+get_next_line: Libft/get_next_line/CMakeFiles/get_next_line.dir/rule
 .PHONY : get_next_line
 
 # clean rule for target.
-Libft/Get_Next_Line/CMakeFiles/get_next_line.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Libft/Get_Next_Line/CMakeFiles/get_next_line.dir/build.make Libft/Get_Next_Line/CMakeFiles/get_next_line.dir/clean
-.PHONY : Libft/Get_Next_Line/CMakeFiles/get_next_line.dir/clean
+Libft/get_next_line/CMakeFiles/get_next_line.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Libft/get_next_line/CMakeFiles/get_next_line.dir/build.make Libft/get_next_line/CMakeFiles/get_next_line.dir/clean
+.PHONY : Libft/get_next_line/CMakeFiles/get_next_line.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

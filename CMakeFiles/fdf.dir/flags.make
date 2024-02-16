@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/anton_beton/Desktop/projects/FDF/include -I/home/anton_beton/Desktop/projects/FDF/Libft/include -I/home/anton_beton/Desktop/projects/FDF/Libft/Get_Next_Line/include -isystem /home/anton_beton/Desktop/projects/FDF/MLX42/include
+C_INCLUDES = -I/home/anton_beton/Desktop/projects/FDF/include -I/home/anton_beton/Desktop/projects/FDF/Libft/include -I/home/anton_beton/Desktop/projects/FDF/Libft/get_next_line/include -isystem /home/anton_beton/Desktop/projects/FDF/MLX42/include
 
-C_FLAGS = -Wall -Werror -Wextra -Ofast -O3
+C_FLAGS = -Wall -Werror -Wextra -Ofast -O3 -g -fsanitize=address
 

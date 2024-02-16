@@ -27,7 +27,7 @@ int	main(int argc, char **argv){
 		return(EXIT_FAILURE);
 	}
 	fdf = init_fdf(1000, 1000, argv[1]);
-	mlx_loop(fdf->mlx);
+	start_renderloop_fdf(fdf);
 	destroy_fdf(fdf);
 
 	return(EXIT_SUCCESS);

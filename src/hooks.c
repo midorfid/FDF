@@ -10,9 +10,9 @@ typedef struct key_pressed
 void    key_handler(t_fdf *data){
     const t_key_pressed     base[] = \
 {
-    {MLX_KEY_W, data->y_offset + (5 / data->scale), &data->x_offset},
+    {MLX_KEY_W, data->y_offset - (5 / data->scale), &data->y_offset},
     {MLX_KEY_A, data->x_offset - (5 / data->scale), &data->x_offset},
-    {MLX_KEY_S, data->y_offset - (5 / data->scale), &data->x_offset},
+    {MLX_KEY_S, data->y_offset + (5 / data->scale), &data->y_offset},
     {MLX_KEY_D, data->x_offset + (5 / data->scale), &data->x_offset},
 
     {MLX_KEY_Z, data->scale * 1.05, &data->scale},

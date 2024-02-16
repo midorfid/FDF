@@ -37,6 +37,10 @@ t_fdf   *init_fdf(int w_height, int w_width, char *filename){
     return(fdf);
 }
 
+void    start_renderloop_fdf(t_fdf *fdf) {
+    mlx_loop(fdf->mlx);
+}
+
 void    destroy_fdf(t_fdf *fdf){
     destroy_map(fdf->map);
     mlx_delete_image(fdf->mlx, fdf->img[0]);

@@ -12,7 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
   "CMakeLists.txt"
   "Libft/CMakeLists.txt"
-  "Libft/Get_Next_Line/CMakeLists.txt"
+  "Libft/get_next_line/CMakeLists.txt"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
@@ -42,7 +42,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "Libft/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Libft/Get_Next_Line/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Libft/get_next_line/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -52,5 +52,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/build_mlx42.dir/DependInfo.cmake"
   "CMakeFiles/fdf.dir/DependInfo.cmake"
   "Libft/CMakeFiles/ft.dir/DependInfo.cmake"
-  "Libft/Get_Next_Line/CMakeFiles/get_next_line.dir/DependInfo.cmake"
+  "Libft/get_next_line/CMakeFiles/get_next_line.dir/DependInfo.cmake"
   )
